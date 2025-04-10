@@ -15,11 +15,14 @@ dependencies = [
   "tomli-w>=1.2.0",
 ]
 [project.scripts]
-scrcpy-ui = "scrcpy_ui.main"
+scrcpy-ui = "scrcpy_ui.main:main"
 
 [tool.setuptools]
 packages = ["scrcpy", "scrcpy_ui"]
 include-package-data = true
+
+[tool.setuptools.package-data]
+"scrcpy" = ["scrcpy-server.jar"]
 
 [tool.uv]
 no-binary-package = ["av"]
