@@ -19,6 +19,7 @@ scrcpy-ui = "scrcpy_ui.main"
 
 [tool.setuptools]
 packages = ["scrcpy", "scrcpy_ui"]
+include-package-data = true
 
 [tool.uv]
 no-binary-package = ["av"]
